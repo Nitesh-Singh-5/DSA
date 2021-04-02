@@ -2,4 +2,4 @@ dvv
 
 name : Nitesh
 language: javascript, python, c programming 
-college
+college : Noida Institute of Engineering 
