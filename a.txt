@@ -1,5 +1,0 @@
-dvv
-
-name : Nitesh
-language: javascript, python, c programming 
-college : Noida Institute of Engineering and techonology
