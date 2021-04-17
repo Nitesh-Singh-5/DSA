@@ -1,10 +1,11 @@
 #include <iostream>
-using namespace std;
 inline void fun();
-void main()
+using namespace std;
+int main()
 {
     cout << "You are in main" << endl;
     fun();
+    return 0;
 }
 void fun()
 {
