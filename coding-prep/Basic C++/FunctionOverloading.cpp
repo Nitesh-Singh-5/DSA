@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 int area(int, int);
 int area(int);
@@ -16,4 +17,9 @@ int main()
     cout << "Enter Radius of circle :" << endl;
     cin >> r;
     cout << "Area of circle :" << area(r);
+    cout << "Enter Length and Breadth of Rectangle :" << endl;
+    cin >> l >> b;
+    cout << "Area of Rectange :" << area(l, b);
+    return 0;
+    getch();
 }
