@@ -1,3 +1,5 @@
+// Inline FunctionExample
+
 #include <iostream>
 inline void fun();
 using namespace std;
