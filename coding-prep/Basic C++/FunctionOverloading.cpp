@@ -6,6 +6,10 @@ int area(int R)
 {
     return (3.14 * R * R);
 }
+int area(int L, int B)
+{
+    return (L * B);
+}
 int main()
 {
     int r, l, b;
