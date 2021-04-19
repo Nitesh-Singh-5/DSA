@@ -17,7 +17,8 @@ book input()
 }
 void display(book b)
 {
-    cout << b.bookid << " " << b.title << " " << b.price;
+    cout << endl
+         << b.bookid << " " << b.title << " " << b.price;
 }
 int main()
 {
