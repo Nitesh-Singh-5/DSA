@@ -24,4 +24,7 @@ void Student ::get_data()
 }
 int main()
 {
+    Student stu;
+    stu.get_data();
+    stu.display();
 }
