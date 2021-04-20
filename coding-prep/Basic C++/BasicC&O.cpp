@@ -22,3 +22,6 @@ void Student ::get_data()
     cout << "Enter Roll number :" << endl;
     cin >> roll;
 }
+int main()
+{
+}
