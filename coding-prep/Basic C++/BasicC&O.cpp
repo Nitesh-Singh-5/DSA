@@ -15,3 +15,10 @@ public:
         cout << "Roll :" << roll << endl;
     }
 };
+void Student ::get_data()
+{
+    cout << "Enter a number :" << endl;
+    cin >> name;
+    cout << "Enter Roll number :" << endl;
+    cin >> roll;
+}
