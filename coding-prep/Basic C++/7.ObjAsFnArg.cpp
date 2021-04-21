@@ -1,4 +1,4 @@
-// Objects as FUnction Arguments
+// Objects as FUnction Arguments pass by value
 
 #include <iostream>
 using namespace std;
@@ -24,7 +24,6 @@ void Total ::add(Total x, Total y)
 {
     n = x.n + y.n;
 }
-
 int main()
 {
     Total a, b, result;
