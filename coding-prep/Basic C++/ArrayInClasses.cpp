@@ -22,19 +22,3 @@ void Student ::getdata()
     }
     getch();
 }
-void Student ::display()
-{
-    for (int i = 0; i < Size; i++)
-    {
-        cout << "Name :" << name[i] << endl;
-        cout << "Roll No :" << roll[i] << endl;
-    }
-    getch();
-}
-int main()
-{
-    Student stu;
-    stu.getdata();
-    stu.display();
-    return 0;
-}
