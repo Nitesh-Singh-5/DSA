@@ -1,6 +1,3 @@
-//  
-
-
 //Default argument concept
 
 #include <iostream>

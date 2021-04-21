@@ -1,4 +1,4 @@
-// Inline FunctionExample
+// Inline Function Example
 
 #include <iostream>
 inline void fun();
