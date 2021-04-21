@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+// #include <conio.h>
 using namespace std;
 #define Size 3
 class Student
@@ -20,7 +20,6 @@ void Student ::getdata()
         cout << "Enter Roll :" << endl;
         cin >> roll[i];
     }
-    getch();
 }
 void Student ::display()
 {
@@ -29,7 +28,7 @@ void Student ::display()
         cout << "Name :" << name[i] << endl;
         cout << "Roll No :" << roll[i] << endl;
     }
-    getch();
+    // getch();
 }
 int main()
 {
