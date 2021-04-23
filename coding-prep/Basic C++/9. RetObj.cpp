@@ -32,7 +32,19 @@ void matrix ::putdata()
         cout << endl;
     }
 }
-
+matrix matrix ::add(matrix m, matrix n)
+{
+    matrix h;
+    int i, j;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            h.item[i][j] = m.item[i][j] + n.item[i][j];
+        }
+    }
+    return h;
+}
 int main()
 {
     matrix a, b, c, result;
