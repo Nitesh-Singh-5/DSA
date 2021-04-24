@@ -23,3 +23,9 @@ int add()
     temp = s.a + s.b; // accessing a and b i.e private data with friend function
     return temp;
 }
+int main()
+{
+    int result = add();
+    cout << "Sum = " << result;
+    return 0;
+}
