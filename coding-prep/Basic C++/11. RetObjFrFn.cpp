@@ -1,3 +1,5 @@
+//Returning object with friend function
+
 #include <iostream>
 using namespace std;
 class Sum
