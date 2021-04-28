@@ -6,5 +6,6 @@
         "**/requirements{/**,*}.{txt,in}": "pip-requirements",
         "ostream": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
