@@ -26,3 +26,13 @@ public:
         return i;
     }
 };
+int main()
+{
+    Integer i1, i2;
+    i1.get_data();
+    i2 = i1++; //   i2=i1.operator++();
+    i2.show_data();
+    i2 = ++i1;
+    i2.show_data();
+    return 0;
+}
