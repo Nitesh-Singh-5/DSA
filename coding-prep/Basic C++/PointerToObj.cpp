@@ -1,4 +1,4 @@
-// Declaration of pointers in member function
+// Accessing member using pointer object
 
 #include <bits/stdc++.h>
 using namespace std;
