@@ -18,13 +18,3 @@ public:
         cout << "USB: " << usb << endl;
     }
 };
-int main()
-{
-    Laptop dell;
-    Laptop *pdell;
-    pdell = &dell;
-    pdell->usb = 3; // (*pdell).usb=3
-    pdell->getdata(20);
-    pdell->disp();
-    return 0;
-}
