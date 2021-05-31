@@ -1,12 +1,14 @@
 // Head Recursion
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+
 void fun(int n)
 {
     if (n > 0)
     {
         fun(n - 1);
-        printf("%d ", n);
+        cout << n;
     }
 }
 int main()
@@ -18,13 +20,14 @@ int main()
 }
 
 // Tail Recursion
+#include <iostream>
+using namespace std;
 
-#include <stdio.h>
 void fun(int n)
 {
     if (n > 0)
     {
-        printf("%d ", n);
+        cout << n;
         fun(n - 1);
     }
 }
@@ -69,7 +72,7 @@ void funB(int n)
 {
     if (n > 1)
     {
-        printf("%d ", n);
+        cout << n;
         funA(n / 2);
     }
 }
@@ -80,18 +83,19 @@ int main()
 }
 
 //Nested Recursion
+#include <iostream>
+using namespace std;
 
-#include <stdio.h>
-int fun(int n)
+int fun1(int n)
 {
     if (n > 100)
         return n - 10;
-    return fun(fun(n + 11));
+    return fun1(fun1(n + 11));
 }
 int main()
 {
     int r;
-    r = fun(95);
-    printf("%d\n", r);
+    r = fun1(95);
+    cout << r;
     return 0;
 }
