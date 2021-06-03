@@ -1,6 +1,7 @@
 //Fibonacci
+#include <iostream>
+using namespace std;
 
-#include <stdio.h>
 int fib(int n)
 {
     int t0 = 0, t1 = 1, s = 0, i;
@@ -17,12 +18,15 @@ int fib(int n)
 
     return s;
 }
+// recursive function
+
 int rfib(int n)
 {
     if (n <= 1)
         return n;
     return rfib(n - 2) + rfib(n - 1);
 }
+
 int F[10];
 int mfib(int n)
 {
