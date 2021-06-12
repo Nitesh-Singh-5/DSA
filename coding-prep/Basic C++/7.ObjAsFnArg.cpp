@@ -24,13 +24,3 @@ void Total ::add(Total x, Total y)
 {
     n = x.n + y.n;
 }
-int main()
-{
-    Total a, b, result;
-    a.getdata();
-    b.getdata();
-    result.add(a, b);
-    cout << "Sum of the numbers :" << endl;
-    result.putdata();
-    return 0;
-}
