@@ -303,7 +303,32 @@ Array *Array::Inter(Array arr2)
 
     return arr3;
 }
+Array *Array::Diff(Array arr2)
+{
+    int i, j, k;
+    i = j = k = 0;
 
+    Array *arr3 = new Array(length + arr2.length);
+
+    while (i < length && j < arr2.length)
+    {
+        if (A[i] < arr2.A[j])
+            arr3->A[k++] = A[i++];
+        else if (arr2.A[j] < A[i])
+            j++;
+        else
+        {
+            i++;
+            j++;
+        }
+    }
+    for (; i < length; i++)
+        arr3->A[k++] = A[i];
+
+    arr3->length = k;
+
+    return arr3;
+}
 int main()
 {
     Array *arr1;
