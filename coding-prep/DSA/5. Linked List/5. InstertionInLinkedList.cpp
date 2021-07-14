@@ -5,7 +5,7 @@ struct Node
 {
     int data;
     struct Node *next;
-} *first = NULL; // this is a global pointer
+} *first = NULL, *last = NULL; // this is a global pointer
 
 void display(struct Node *p)
 {
@@ -56,6 +56,22 @@ void insert(struct Node *p, int index, int x)
     }
 }
 
+// Time Complexity: O(1)
+// 'first' and 'last' are global pointers
+void insertLast(int x)
+{
+    struct Node *t = (struct Node *)malloc(sizeof(struct Node));
+    t->data = x;
+    t->next = NULL;
+    if (first == NULL)
+        first = last = t;
+    else
+    {
+        last->next = t;
+        last = t;
+    }
+}
+
 int main()
 {
     insert(first, 0, 3);
@@ -63,10 +79,13 @@ int main()
     insert(first, 2, 7);
     display(first);
 
-    insert(first, 0, 10);
     display(first);
 
     insert(first, 2, 45);
+
+    insertLast(1);
+    insertLast(2);
+
     display(first);
 
     return 0;
