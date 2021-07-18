@@ -64,5 +64,7 @@ int main()
     printf("Poped Node's data: %d\n", pop());
     printf("Poped Node's data: %d\n", pop());
 
+    
+
     return 0;
 }
