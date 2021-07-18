@@ -59,7 +59,6 @@ int main()
     push(10);
     push(20);
     push(30);
-
     display();
     printf("Poped Node's data: %d\n", pop());
     printf("Poped Node's data: %d\n", pop());
