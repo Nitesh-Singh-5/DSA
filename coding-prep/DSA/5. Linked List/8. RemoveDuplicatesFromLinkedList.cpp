@@ -50,22 +50,3 @@ void removeDuplicates(struct Node *head)
         }
     }
 }
-
-int main(void)
-{
-    int keys[] = {1, 2, 2, 2, 3, 4, 4, 5};
-    int n = sizeof(keys) / sizeof(keys[0]);
-
-    struct Node *head = NULL;
-
-    for (int i = n - 1; i >= 0; i--)
-    {
-        push(&head, keys[i]);
-    }
-
-    removeDuplicates(head);
-
-    printList(head);
-
-    return 0;
-}
